@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UmugishaMarket | Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-2xl font-bold text-green-700">UmugishaMarket</h1>
+      <nav class="space-x-4">
+        <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+        <a href="shop.html" class="text-gray-700 hover:text-green-600 font-bold">Shop</a>
+        <a href="vendors.html" class="text-gray-700 hover:text-green-600">Vendors</a>
+        <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Shop Page -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6">Duhahire hano</h2>
+
+      <!-- Filter/Search -->
+      <div class="flex flex-col md:flex-row justify-between mb-6">
+        <input type="text" placeholder="Shaka ibicuruzwa..." class="border rounded p-2 w-full md:w-1/3">
+        <select class="border rounded p-2 mt-4 md:mt-0">
+          <option>Sort by</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest</option>
+        </select>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded shadow p-4">
+          <img src="product1.jpg" alt="Product" class="h-32 mx-auto mb-2">
+          <h4 class="font-semibold">Behringer Xenyx Mixer</h4>
+          <p class="text-green-700 font-bold">RWF 250,000</p>
+          <button class="mt-2 bg-green-700 text-white px-3 py-2 rounded hover:bg-green-800">Add to Cart</button>
+        </div>
+        <!-- Duplicate this div for other products -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2025 UmugishaMarket. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!-- ✅ Shop page structure yawe yuzuye, ready for product data dynamic rendering or static listing. Next: Vendors page or Contact page design if you confirm. -->
